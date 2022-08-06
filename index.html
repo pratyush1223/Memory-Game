@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://kit.fontawesome.com/5e0c7c64b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Matching Game</title>
+  </head>
+  <body>
+   
+    
+    <div class="board">
+      
+        <header>
+          <img src="img\logo.png" alt="logo" class="logo">
+          <h2 class="matching">Matching Game</h2>
+        </header>
+      
+
+      <div class="game-info hidden">
+        <div>Time: <span class="timer">00:00</span></div>
+        <div>Moves:<span class="moves">0</span></div>
+      </div>
+      <div class="cards-container">
+        <div class="card" data-name="csk">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__csk" src="img\csk.png" alt="csk" />
+        </div>
+        <div class="card" data-name="csk">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__csk" src="img\csk.png" alt="csk" />
+        </div>
+        <div class="card" data-name="gt">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__gt" src="img\gt.png " alt="gt" />
+        </div>
+        <div class="card" data-name="gt">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__gt" src="/img/gt.png " alt="gt" />
+        </div>
+        <div class="card" data-name="kkr">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__kkr" src="/img/kkr.png" alt="kkr" />
+        </div>
+        <div class="card" data-name="kkr">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__kkr" src="/img/kkr.png" alt="kkr" />
+        </div>
+        <div class="card" data-name="lsg">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__lsg" src="/img/lsg.png" alt="lsg" />
+        </div>
+        <div class="card" data-name="lsg">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__lsg" src="/img/lsg.png" alt="lsg" />
+        </div>
+        <div class="card" data-name="mi">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__mi" src="/img/mi.png" alt="mi" />
+        </div>
+        <div class="card" data-name="mi">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__mi" src="/img/mi.png" alt="mi" />
+        </div>
+        <div class="card" data-name="pbks">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__pbks" src="/img/pbks.png" alt="pbks" />
+        </div>
+        <div class="card" data-name="pbks">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__pbks" src="/img/pbks.png" alt="pbks" />
+        </div>
+        <div class="card" data-name="rcb">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__rcb" src="/img/rcb.png" alt="rcb" />
+        </div>
+        <div class="card" data-name="rcb">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__rcb" src="/img/rcb.png" alt="rcb" />
+        </div>
+        <div class="card" data-name="rr">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__rr" src="/img/rr.png" alt="rr" />
+        </div>
+        <div class="card" data-name="rr">
+          <img class="card-front" src="img/cricket.png" alt="front" />
+          <img class="card-back card-back__rr" src="/img/rr.png" alt="rr" />
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          Designed by Pratyush1223 <br />
+        </p>
+      </div>
+    </div>
+    <div class="overlay-window visible">Click to start!</div>
+    <div class="window winning-window">
+      <h1>Congratulations 🎉🎉🎉</h1>
+      <h2>
+        It took you <span class="took-min">00</span> minutes
+        <span class="took-sec">36</span> seconds and
+        <span class="took-moves">12</span> moves to match all cards.😊😉😎
+      </h2>
+      <button class="btn">Play again 🔁</button>
+    </div>
+    <div class="window game-over-window">
+      <h1>Game Over!!! 😐😟</h1>
+      <button class="btn">Play again </button>
+    </div>
+  </body>
+</html>
